@@ -59,3 +59,5 @@ If you are working directly on our repository, open `app/src/main/assets/config.
 | `FIDUCIALS`                 | :heavy_minus_sign:  | List of pairs of `[double, double]`  |              | (x, y) coordinates  of the top-left and bottom-right corners for each fiducial (**Note:** RDTScan currently only supports either no fiducials or two fiducials; this will be addressed in a later update) |
 
 Note that the `LINE_INTENSITY` parameter gives you direct control over the interpretation accuracy of RDTScan for the target RDT. If RDTScan is under-reporting positive cases because it is missing faint lines, `LINE_INTENSITY` can be decreased to lower the threshold needed for a postivie test result. Conversely, `LINE_INTENSITY` can be increased if RDTScan is over-reporting positive cases. The default value is based on deployments and studies with a handful of RDT brands, so it should serve as a reasonable baseline in most cases.
+
+Also, add the key for the new RDT to `app/src/main/res/values/array.xml`
